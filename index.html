@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Front Page</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background: #000;
+            color: #fff;
+        }
+        
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(240, 25, 25);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .language {
+            padding: 5px;
+            border-radius: 3px;
+            border: none;
+        }
+
+        .sign-in {
+            background: #e50914;
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url("https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg")no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .subtext {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .small {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .email-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            border-radius: 7px;
+        }
+
+        .email-box input {
+            padding: 15px;
+            width: 60%;
+            border: none;
+            font-size: 1rem;
+            background-color: #000;
+            color: azure;
+            border-radius: 7px;
+        }
+
+        .get-started {
+            background: #e50914;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 25px;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Netflix</div>
+        <div class="header-right">
+            <select class="language">
+                <option>English</option>
+                <option>हिन्दी</option>
+            </select>
+            <button class="sign-in">Sign-In</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="overplay"></div>
+        <div class="content">
+            <h1>Unlimited movies,Tv shows and more</h1>
+            <p class="subtext">Start at ₹149. Cancle at any time</p>
+            <p class="small">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-box">
+                <input type="email" placeholder="Email address">
+                <button class="get-started">Get Started</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
